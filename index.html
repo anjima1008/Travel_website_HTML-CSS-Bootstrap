@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid p-2">
+        <a class="navbar-brand ms-5" href="#"> 🏖️Sand <span>Stones</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-5" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-5" aria-current="page" href="#">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-5" aria-current="page" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-5" aria-current="page" href="#"
+                >Destination</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-5" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="./booking.html"><button class="btn px-4 py-2 mt-4 mt-md-0 me-5 " id="regbtn">
+                Book now
+              </button></a>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn px-5 py-2 mt-4 mt-md-0 me-5"
+                id="navbtn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Sign in
+              </button>
+            </li>
+            <!-- modal box -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Signin , get 10% discount!
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="p-4">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          placeholder="Email id"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                        <div id="emailHelp" class="form-text">
+                          We'll never share your email with anyone else.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                      <div class="mb-3 p-2 text-center">
+                        <button type="submit" class="btn btn-primary me-5">
+                          Sign in
+                        </button>
+                        <span class="mb-3 text-center"
+                          ><a href=" ">Forgot password?</a></span
+                        >
+                      </div>
+                      <div class="text-center">
+                        <p>Not a member? <a href="#!">Register</a></p>
+                        <p>or sign up with:</p>
+                        <button
+                          type="button"
+                         
+                          class="btn btn-link"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                         
+                          class="btn btn-link"
+                        >
+                          <i class="fab fa-google"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+
+    <section class="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="img-fluid" autoplay loop muted>
+              <source
+                src="./assets/Tropical.mp4"
+                class="d-block w-100"
+                type="video/mp4"
+              />
+            </video>
+            <div class="carousel-caption">
+              <h5>Find your next story with SandStone</h5>
+              <p>Let the waves hit your feet ,and sand be your seat!</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video class="img-fluid" autoplay loop muted>
+              <source
+                src="./assets/Untitled video - Made with Clipchamp.mp4"
+                class="d-block w-100"
+                type="video/mp4"
+              />
+            </video>
+            <div class="carousel-caption">
+              <h5>Vows on the Beach</h5>
+              <p>
+                Sea shells and sandcastles, vows of love in the ocean breeze.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video class="img-fluid" autoplay loop muted>
+              <source
+                src="https://videos.pexels.com/video-files/8925442/8925442-uhd_3840_2160_25fps.mp4"
+                class="d-block w-100"
+                type="video/mp4"
+              />
+            </video>
+            <div class="carousel-caption">
+              <h5>Family Vacations</h5>
+              <p>
+                You’ll go home with a tan, an experience, and the best memories
+                that were spent with your family.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <div class="home-search">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="home-search-container px-4">
+            <form class="form text-center p-3">
+              <div class="row justify-content-center p-3">
+                <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="">Destination</label>
+                  <select name="" id="" class="form-select">
+                    <option selected value="">Where you are going ?</option>
+                    <option value="">Peru</option>
+                    <option value="">Japan</option>
+                    <option value="">Thailand</option>
+                    <option value="">Brazil</option>
+                    <option value="">United States</option>
+                    <option value="">Israel</option>
+                    <option value="">China</option>
+                    <option value="">Russia</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="">Date of Departure</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="daterange"
+                    placeholder=""
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="">Travellers</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="No.of People"
+                  />
+                  
+                </div>
+
+                <div class="col-sm-12 col-md-6mb-3 mb-lg-0 col-lg-3">
+                  <input
+                    type="submit"
+                    class="btn btn-block mt-4 mb-4"
+                    id="search-btn"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <section class="stays-mt-5 ">
+      <div class="main-txt text-center">
+        <h2>Find your favourite stays</h2>
+        
+      </div>
+      <div class="container ">
+        <div class="row mt-5 ">
+          <div class="row row-cols-lg-5 row-cols-md-2 row-cols-sm-1 d-flex ms-0">
+
+            <div class="col-md-4 stay-card">
+              <div class="card border-0 bg-transparent h-100 shadow">
+                <img
+                  src="https://imgs.search.brave.com/EegLdTVRiiKwN9GcuYN896hgfKPuxkpnq3GUu5tU_SU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI2L0NodXJjaF9D/b3R0YWdlLF9TdHJl/dHRvbl9HcmFuZGlz/b25fLV9nZW9ncmFw/aC5vcmcudWtfLV80/NTkyNDMuanBn"
+                  class="card-img-top"
+                  alt="Cottage"
+                  height="250px"
+                />
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <h5 class="card-title ">Cottages</h5>
+                  <a href="https://www.expedia.co.in/Hotel-Search?destination=India&regionId=80&latLong=28.613895%2C77.209006&startDate=2024-05-31&d1=2024-05-31&endDate=2024-06-02&d2=2024-06-02&rooms=1&adults=2&lodging=COTTAGE" class="icon-link me-0">
+                    <img src="./assets/chevron-right.svg" alt="chevron-right">
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0 stay-card">
+              <div class="card border-0 bg-transparent h-100 shadow">
+                <img
+                  src="https://tse4.mm.bing.net/th?id=OIP.w9kQtAOn3DnIGv1rHkhB7AHaE8&pid=Api&P=0&h=180"
+                  class="card-img-top"
+                  alt="Cottage"
+                  height="250px"
+                />
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Beach homes</h5>
+                  <a href="#" class="icon-link me-0">
+                    <img src="./assets/chevron-right.svg" alt="chevron-right">
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0 stay-card">
+              <div class="card border-0 bg-transparent h-100 shadow">
+                <img
+                  src="https://tse1.mm.bing.net/th?id=OIP.IGGicRGANLww8iCUtdSsrgHaFj&pid=Api&P=0&h=180"
+                  class="card-img-top"
+                  alt="Cottage"
+                  height="250px"
+                />
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Cabins</h5>
+                  <a href="#" class="icon-link me-0">
+                    <img src="./assets/chevron-right.svg" alt="chevron-right">
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0 stay-card">
+              <div class="card border-0 bg-transparent h-100 shadow">
+                <img
+                  src="https://tse2.mm.bing.net/th?id=OIP.rhn_LRfzPl-5y9YDj5UfBwHaE8&pid=Api&P=0&h=180"
+                  class="card-img-top"
+                  alt="Cottage"
+                  height="250px"
+                />
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Apartments</h5>
+                  <a href="#" class="icon-link me-0 ">
+                    <img src="./assets/chevron-right.svg" alt="chevron-right">
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0 stay-card">
+              <div class="card border-0 bg-transparent h-100 shadow">
+                <img
+                  src="https://imgs.search.brave.com/RjGGdj0AallN52TB7Vv0DDbDKk7Q-oXYUuyoNNIQ4LA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aG9tZXRvZ28ubmV0/L2Fzc2V0cy9tZWRp/YS9waWNzLzYwMF8z/MTUvNjExODkyZDY4/MDkyOC5qcGc"
+                  class="card-img-top"
+                  alt="Cottage"
+                  height="250px"
+                />
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <h5 class="card-title">Holiday Homes</h5>
+                  <a href="#" class="icon-link me-0">
+                    <img src="./assets/chevron-right.svg" alt="chevron-right">
+                    </a>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+        <p class="text-center px-4 py-5 fs-5" >Our stays are famous for its endless white sand expanses, exquisite turquoise waters and romantic sunsets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages mt-3" id="packages">
+      <div class="container">
+        <div class="main-txt text-center">
+          <h2>Top Beach Destinations</h2>
+          
+        </div>
+        <p class="text-center px-4 fs-5 sm-fs-6">Play on pristine, white-sand beaches caressed by crystal-clear seas, from the safety of Beaches all-inclusive resorts. Enjoy the comfort of spacious rooms and suites, have fun at the water park and take part in a whole array of exciting activities for kids of every age. It’s all part of your all-inclusive family vacation package.</p>
+
+        <div class="row py-4" style="margin-top: 30px">
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.encirclephotos.com/wp-content/uploads/Antigua-St-Johns-Dickenson-Bay-Couple-Wading-in-Water.jpg"
+                alt=""
+              />
+              <div class="card-overlay"></div> <!-- Add a new div for overlay -->
+              <div class="card-body">
+                <h4>Antigua</h4>
+               <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/Barbados_hero.png?itok=2a1yLew_"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>Barbados</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/South%20Pacific-hero.jpg?itok=29hx4BSY"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>South Pacific Islands</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/Turks%20and%20Cacos_hero.png?itok=Elct_E06"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>Turks & Caicos</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/St.%20Lucia_hero.png?itok=-00dZ9yM"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>Saint Lucia</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/Caribbean_hero.png?itok=D5vQT-64"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>Caribbean</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.sandals.com/blog/content/images/2022/03/Sandals-Negril-Seven-Mile-Beach-Overview-1.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>Jamaica</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card border-0 text-center">
+              <img
+                src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/Dominican%20Republic_hero.jpg?itok=_IBpzqyb"
+                alt=""
+              />
+              <div class="card-body">
+                <h4>Dominican Republic</h4>
+                <a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="deals">
+      <div class="container">
+        
+        <div class="main-txt text-center mb-2">
+          <h2>Trending Packages</h2>
+        </div>
+
+        <section class="deals m-4">
+          <div class="row" >
+
+            <div class="col-md-4 py-3 py-md-0">
+  
+              <div class="card rounded-2">
+                <img class="p-4" src="https://cdn.getyourguide.com/img/tour/629b384cd5d01.jpeg/98.jpg" alt="" height="300px">
+                <div class="dealcard-body p-3 text-center">
+                  <h4 class="main-txt ">Memorable Vacation in Antigua</h4>
+                  <h6><strong>6 days & 5 nights</strong></h6>
+                  <ul class="main-txt text-center ms-0">
+                    <li>2 flights</li>
+                    <li>4 hotels</li>
+                    <li>16 activities</li>
+                    <li>6 transfers</li>
+                  </ul>
+                  <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                  </div>
+                  <h6 class="main-txt mt-2">Price: <strong>$500</strong></h6>
+                 
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+  
+              <div class="card rounded-2">
+                <img class="p-4" src="https://cloudinary.fclmedia.com/fctg/image/fetch/w_1080,c_fit,f_webp/q_80/https://travelbox.fclmedia.com/surf-documents/travelbox/tbxcontent/tbx_images/cms_images/Kql6wZJc_2024_02_15/IMG_znz+012024_ac132612097_tm_zanzibar_themorazanzibar_pool_view.jpg" alt="" height="300px">
+                <div class="dealcard-body p-3 text-center">
+                  <h4 class="main-txt">The Mora Zanzibar  Resort & Spa</h4>
+                  <h6><strong>7 days & 6 nights</strong></h6>
+                  <ul class="main-txt text-center ms-0">
+                    <li>3 flights</li>
+                    <li>4 hotels</li>
+                    <li>11 activities</li>
+                    <li>6 transfers</li>
+                  </ul>
+                  <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                  </div>
+                  <h6 class="main-txt mt-2">Price: <strong>$800</strong></h6>
+                 
+                </div>
+              </div>
+  
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+  
+              <div class="card rounded-2">
+                <img class="p-4" src="https://cloudinary.fclmedia.com/fctg/image/fetch/w_1080,c_fit,f_webp/q_80/https://travelbox.fclmedia.com/surf-documents/travelbox/tbxcontent/tbx_images/cms_images/md6fKWLJ_2024_02_23/IMG_debd9703-548e-4966-b728-7bc19e735104.jpeg" alt="" height="300px">
+                <div class="dealcard-body p-3 text-center">
+                  <h4 class="main-txt ">Riu Palace Mauritius</h4>
+                  <h6><strong>5 days & 4 nights</strong></h6>
+                  <ul class="main-txt text-center ms-0">
+                    <li>2 flights</li>
+                    <li>3 hotels</li>
+                    <li>13 activities</li>
+                    <li>5 transfers</li>
+                  </ul>
+                  <div class="star">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                  </div>
+                  <h6 class="main-txt mt-2">Price: <strong>$500</strong></h6>
+                 
+                </div>
+              </div>
+  
+            </div>
+  
+  
+  
+          </div>
+        </section>
+
+
+
+    
+      </div>
+    </section>
+    <section class="Features">
+      <div class="container px-4 py-5" >
+        <div class="main-txt text-center">
+          <h2>What we offer?</h2>
+          <hr>
+        </div>
+        <div class="row py-4 row-cols-1 row-cols-lg-4">
+          <div class="service-col">
+            <div
+              class="service-icon d-flex align-items-center justify-content-center text-bg-primary bg-transparent fs-2 mb-3">
+              <img src="./assets/house-heart-fill (1).svg" alt="room suites" height="50">
+            </div>
+            <h4 class="main-txt  text-center ">Room suites</h4>
+            <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed omnis ea sit ipsum a, dolor adipisci</p>
+            
+          </div>
+          <div class="service-col">
+            <div
+              class="feature-icon d-flex align-items-center justify-content-center text-bg-primary bg-transparent fs-2 mb-3">
+              <img src="./assets/tsunami.svg" alt="bus-front" height="50">
+            </div>
+            <h4 class="main-txt  text-center">Private Beach</h4>
+            <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed omnis ea sit ipsum a, dolor adipisci</p>
+          
+          </div>
+          <div class="service-col">
+            <div
+              class="feature-icon d-flex align-items-center justify-content-center text-bg-primary bg-transparent fs-2 mb-3">
+              <img src="./assets/cup-straw.svg" alt="chat-square-heart" height="50">
+            </div>
+            <h4 class="main-txt text-center">Restaurant & Bar</h4>
+            <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed omnis ea sit ipsum a, dolor adipisci</p>
+         
+          </div>
+          <div class="service-col">
+            <div
+              class="feature-icon d-flex align-items-center justify-content-center text-bg-primary bg-transparent fs-2 mb-3">
+              <img src="./assets/controller.svg" alt="chat-square-heart" height="50">
+            </div>
+            <h4 class="main-txt text-center">Game zones</h4>
+            <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed omnis ea sit ipsum a, dolor adipisci</p>
+            
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    
+    
+    <section class="about p-3">
+      <div class="row">
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-5 p-5">
+           
+            <h1 class="mt-4"  style="color: #1f94d4;">Experience new adventures <br>with us</h1>
+
+            <div class="row m-4">
+                <div class="col-md-4">
+                    <div class="about-content rounded">
+                        <h1>3256</h1>
+                        <h5 style="color: #0567a8;font-weight: 600;">Flights</h5>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="about-content rounded ">
+                        <h1>250+</h1>
+                        <h5 style="color: #0567a8;font-weight: 600;">Destinations</h5>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="about-content rounded ">
+                        <h1>2k+</h1>
+                        <h5 style="color: #0567a8;font-weight: 600;">Reviews</p>
+                    </div>
+
+                </div>
+            </div>
+           
+        </div>
+
+       
+        <div class="col-md-5">
+            <div class="imgDiv">
+                <video class="img-fluid" autoplay loop muted>
+                    <source src="./assets/slide1.mp4" class="d-block w-100" type="video/mp4" width="100%" height="700px" />
+                </video>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+  </section>
+  
+    <section class="queries px-4 py-5">
+      <div class="main-txt text-center">
+        <h2>Frequently asked Questions</h2>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              How can I find the best travel deal ?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab quos ullam. A architecto veniam fuga culpa, explicabo reprehenderit cum cupiditate sequi dignissimos iusto illum placeat. Expedita qui dolorum fugiat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header ">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             How far in advance should i book?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab quos ullam. A architecto veniam fuga culpa, explicabo reprehenderit cum cupiditate sequi dignissimos iusto illum placeat. Expedita qui dolorum fugiat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How do I know if the travel destinations are safe ?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab quos ullam. A architecto veniam fuga culpa, explicabo reprehenderit cum cupiditate sequi dignissimos iusto illum placeat. Expedita qui dolorum fugiat.</p>w.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+  <div class="row mt-5 p-5 text-light" style="background-color: #1f94d4;">
+      <div class="col-md-1"></div>
+      <div class="col-md-4 text-center m-2">
+        <div class="newsletter mt-2">
+          <h3 class="newsletter_title">Get updates on offers and deals you probably want to know about in your inbox.
+          </h3>
+         
+           <button class="btn btn-light mt-5 ms-0">Newsletter</button>
+        
+      </div>
+
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-1 text-center">
+          <h4>Pages & Links</h4>
+          <a href="" style="color:white;text-decoration: none;">
+              <h6 class="mt-4">Home</h6>
+          </a>
+          <a href="" style="color:white;text-decoration: none">
+              <h6 class="mt-4">About</h6>
+          </a>
+          <a href="" style="color:white;text-decoration: none">
+              <h6 class="mt-4">Service</h6>
+          </a>
+          <a href="" style="color:white;text-decoration: none">
+              <h6 class="mt-4">Contact</h6>
+          </a>
+
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-3 mt-3">
+          <h3 class="text-center ">Follow us</h3>
+        
+          <div class="d-flex mt-5 justify-content-between">
+              <i class="fa-brands fa-facebook-f fa-2x"></i>
+              <i class="fa-brands fa-instagram fa-2x"></i>
+              <i class="fa-brands fa-twitter fa-2x"></i>
+              <i class="fa-brands fa-linkedin-in fa-2x"></i>
+          </div>
+      </div>
+     
+      <div class="col-md-1"></div>
+
+  </div>
+
+   
+  </body>
+</html>
